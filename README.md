@@ -1,32 +1,28 @@
-# kata-tic-tac-toe
+# Roman Numerals
 
-Implement the tic-tac-toe game on Console with two human players.
+Implement the kata using TDD
 
-# Constraints
+# Problem Description
 
-The game should be implemented using TDD. To make the kata interesting, there are two constraints to take into account
+The Romans were a clever bunch. They conquered most of Europe and ruled it for hundreds of years. They invented concrete and straight roads and even bikinis [\[1\]](http://sights.seindal.dk/sight/456_Roman_Villa_of_Piazza_Armerina.html). 
+One thing they never discovered though was the number zero. This made writing and dating extensive histories of their exploits slightly more challenging, but the system of numbers they came up with is still in use today. For example the BBC uses Roman numerals to date their programmes.
 
-## Two minutes iteration
+The Romans wrote numbers using letters : `I`, `V`, `X`, `L`, `C`, `D`, `M`. (notice these letters have lots of straight lines and are hence easy to hack into stone tablets)
 
-Set a clock timer to two minutes. When the alarm sounds, pass all your tests, if they don't pass, revert the changes to the last commit:
+## Part I
 
-    git reset --hard
+The Kata says you should write a function to convert from normal numbers to Roman Numerals: eg
 
-## Object Calisthenics
+         1 --> I
+         10 --> X
+         7 --> VII
 
-Object Calisthenics are programming exercises, formalized as a set of 9 rules invented by Jeff Bay in his book The ThoughtWorks Anthology. The word Object is related to Object Oriented Programming. The word Calisthenics is derived from greek, and means exercises under the context of gymnastics. By trying to follow these rules as much as possible, you will naturally change how you write code. It doesn’t mean you have to follow all these rules, all the time. Find your balance with these rules, use some of them only if you feel comfortable with them.
+etc.
 
-These rules focus on maintainability, readability, testability, and comprehensibility of your code. If you already write code that is maintainable, readable, testable, and comprehensible, then these rules will help you write code that is more maintainable, more readable, more testable, and more comprehensible.
+For a full description of how it works, take a look at [\[this useful reference website\]](http://www.novaroma.org/via_romana/numbers.html) : which includes an implementation of the Kata in javascript.
 
-The 9 rules listed below:
+There is no need to be able to convert numbers larger than about 3000.  (The Romans themselves didn't tend to go any higher)
 
-1. Only One Level Of Indentation Per Method
-1. Don’t Use The ELSE Keyword
-1. Wrap All Primitives And Strings
-1. First Class Collections
-1. One Dot Per Line
-1. Don’t Abbreviate
-1. Keep All Entities Small
-1. No Classes With More Than Two Instance Variables
-1. No Getters/Setters/Properties
+## Part II
 
+Write a function to convert in the other direction, ie numeral to digit
